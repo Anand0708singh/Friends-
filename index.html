@@ -3,80 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raksha Bandhan Wishes</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0e5d8;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            text-align: center;
-            padding: 50px;
-            margin: 0 auto;
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-        }
-
-        h1 {
-            color: #d85c43;
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #444;
-            font-size: 32px;
-            margin-bottom: 40px;
-        }
-
-        .message {
-            background-color: #fff8e7;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 0 auto 40px;
-            font-size: 24px;
-            color: #6b4e3d;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .rakhi-image {
-            margin-top: 30px;
-        }
-
-        footer {
-            font-size: 18px;
-            color: #555;
-            margin-top: 40px;
-        }
-
-        .rakhi-image img {
-            width: 250px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Happy Raksha Bandhan!</h1>
-        <h2>To My Amazing Friend</h2>
-
-        <div class="message">
-            <p>Wishing you a Raksha Bandhan filled with joy, love, and beautiful moments. You are such a special friend in my life, and I am forever grateful for your presence. May we continue to share this bond of friendship for many more years to come!</p>
-        </div>
-
-        <div class="rakhi-image">
-            <img src="https://github.com/Anand0708singh/Friends-/blob/main/IMG-20240819-WA0000.jpg?raw=true" alt="Friends Code Image">
+        <h1>Happy Birthday, Sis!</h1>
+        <p class="message">Wishing you all the love, happiness, and joy in the world. Have an amazing day!</p>
+        <button onclick="showMessage()">Click for a Surprise!</button>
+        <div id="surprise" style="display: none;">
+            <img src="cake.png" alt="Birthday Cake" class="cake">
+            <h2>You are the Best Sister Ever!</h2>
+            <p class="special-message">Here's to many more birthdays filled with laughter and love!</p>
         </div>
     </div>
-
-    <footer>
-        With love, <br> Your Friend <br> Anand Singh
-    </footer>
+    <script>
+        function showMessage() {
+            const surprise = document.getElementById('surprise');
+            surprise.style.display = 'block';
+        }
+    </script>
 </body>
 </html>
